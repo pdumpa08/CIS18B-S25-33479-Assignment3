@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.InputMismatchException;
-import java.util.IOError;
 import java.util.Scanner;
 
 // ============================
@@ -204,10 +203,7 @@ public class BankAccountTest {
 
         } catch (InputMismatchException e) {
             System.out.println("Please check your input and try again (needs to be a number).");
-        } catch (IOError e) {
-            System.out.println("An I/O Error has occurred.");
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             System.out.println("An unforeseen error has occurred: " + e);
         } finally {
             scanner.close();
